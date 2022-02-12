@@ -5,8 +5,11 @@ Small task where im asked to create an app in JS to be able to manage the buildi
 Se desea crear una aplicación en JavaScript para poder gestionar los edificios de diferentes ciudades o poblaciones. Para ello se desea almacenar la siguiente información correspondiente a cada edificio:
 
 • Calle del edificio
+
 • Número
+
 • Código Postal (población o ciudad donde se encuentra el edificio)
+
 • Plantas del edificio (dentro de cada planta tendremos un número de puertas y para cada puerta nos interesa almacenar el nombre del propietario).
 
 ## INSTRUCCIONES:

@@ -1,0 +1,92 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Caso Práctico UD4</title>
+
+<script>
+
+function edificio(calle,numero,codigo,plantas) {
+//Declaro las propiedades correspondientes a cada edificio    
+	this.calle = calle;
+	this.numero = numero;
+	this.codigo = codigo;
+	this.plantas = plantas;
+
+//Creo los métodos asociados al constructor del edificio
+		this.agregarPlantasYPuertas = function (numplantas, puertas) {
+
+			this.numplantas = this.numplantas + numplantas;
+			this.puertas = this.puertas + puertas;
+			this.datos = Array();
+
+			//Bucle para las plantas
+			var num = 0;
+			for(var i = 1; i<=numplantas; i++) {
+
+			//Bucle para las puertas por plantas
+				for(var p = 1; p<=puertas; p++) {
+				}
+			}
+		};
+
+		this.modificarNumero = function (numero) {
+			this.numero	= numero;
+		};
+
+		this.modificarCalle = function (calle) {
+			this.calle	= calle;
+		};
+
+		this.modificarCodigoPostal = function (codigo) {
+			this.codigo	= codigo;
+		};
+
+		this.imprimeCalle = this.calle;
+		this.imprimeNumero = this.numero;
+		this.imprimeCodigoPostal = this.codigo;
+
+		this.agregarPropietario = function (nombre,planta,puerta) {
+
+			this.datos = [{"nombre":nombre, "planta":planta, "puerta":puerta}];
+
+				imprimir('<br>' + nombre + ' es ahora el propietario de la puerta: ' +  puerta + ' de la planta: ' + planta);
+
+		};
+
+        this.imprimePlantas = function () {
+
+			imprimir('<h2>Lista de propietarios del edificio: C/ '+ edificioA.imprimeCalle + ' Nº ' + edificioA.imprimeNumero +' con Código Postal: '+ edificioA.imprimeCodigoPostal +'</h2>');
+			//Bucle que recorre todo el array mostrando por pantalla todos los datos
+			for(var i=0;i<this.datos.length;i++) {
+				imprimir('<br>El propietario del piso ' +  this.datos[i]['puerta'] + ' de la planta ' + this.datos[i]['planta'] + ': '+ this.datos[i]['nombre']);
+			}
+		};
+}
+
+function imprimir(texto) {
+	document.write(texto);
+}
+
+var edificioA = new edificio('Goleta','24','29130','0');
+var edificioB = new edificio('Timón','56','23','0');
+var edificioC = new edificio('Fragata','10','13250','0');
+
+imprimir('<h1>Gestión de edificios</h1>');
+imprimir('<h3>Añadimos un nuevo edificio...</h3>');
+imprimir('<h3>Edifício:</h3>Calle: '+ edificioA.imprimeCalle);
+imprimir('<br>Nº: '+ edificioA.imprimeNumero);
+imprimir('<br>Código Postal '+ edificioA.imprimeCodigoPostal);
+imprimir('<h3>Añadimos tres propietarios...</h3>');
+edificioA.agregarPropietario('José Pérez','1','1');
+edificioA.agregarPropietario('Carmen López','1','2');
+edificioA.agregarPropietario('Manuel Martín','2','3');
+edificioA.agregarPropietario('Antonio Quero','3','2');
+edificioA.imprimePlantas();
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

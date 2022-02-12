@@ -1,8 +1,8 @@
 # Quero_Antonio_DWEC_CP1_UD4
 Small task where im asked to create an app in JS to be able to manage the buildings of different cities or towns.
 
-#Explanation
-##SITUACIÓN:
+# Explanation
+## SITUACIÓN:
 Se desea crear una aplicación en JavaScript para poder gestionar los edificios de diferentes ciudades o poblaciones. Para ello se desea almacenar la siguiente información correspondiente a cada edificio:
 
 • Calle del edificio
@@ -10,7 +10,7 @@ Se desea crear una aplicación en JavaScript para poder gestionar los edificios 
 • Código Postal (población o ciudad donde se encuentra el edificio)
 • Plantas del edificio (dentro de cada planta tendremos un número de puertas y para cada puerta nos interesa almacenar el nombre del propietario).
 
-##INSTRUCCIONES:
+## INSTRUCCIONES:
 Se deberá crear un objeto que permita instanciar edificios, para ello crearemos un constructor llamado Edificio al que se le pasará como parámetros la calle, el número y el código postal.
 
 Se crearán los siguientes métodos asociados al constructor Edificio:

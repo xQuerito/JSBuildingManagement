@@ -1,7 +1,6 @@
 # Quero_Antonio_DWEC_CP1_UD4
 Small task where im asked to create an app in JS to be able to manage the buildings of different cities or towns.
 
-# Explanation
 ## SITUACIÓN:
 Se desea crear una aplicación en JavaScript para poder gestionar los edificios de diferentes ciudades o poblaciones. Para ello se desea almacenar la siguiente información correspondiente a cada edificio:
 

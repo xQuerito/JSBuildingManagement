@@ -1,36 +1,36 @@
 # Quero_Antonio_DWEC_CP1_UD4
 Small task where im asked to create an app in JS to be able to manage the buildings of different cities or towns.
 
-## SITUACIÓN:
-Se desea crear una aplicación en JavaScript para poder gestionar los edificios de diferentes ciudades o poblaciones. Para ello se desea almacenar la siguiente información correspondiente a cada edificio:
+## SITUATION:
+We want to create an application in JavaScript to manage the buildings of different cities or towns. To do so, we want to store the following information corresponding to each building:
 
-• Calle del edificio
+• Building street
 
-• Número
+• Number
 
-• Código Postal (población o ciudad donde se encuentra el edificio)
+• Postal Code (town or city where the building is located)
 
-• Plantas del edificio (dentro de cada planta tendremos un número de puertas y para cada puerta nos interesa almacenar el nombre del propietario).
+• Building floors (within each floor we will have a number of doors and for each door we are interested in storing the owner's name).
 
-## INSTRUCCIONES:
-Se deberá crear un objeto que permita instanciar edificios, para ello crearemos un constructor llamado Edificio al que se le pasará como parámetros la calle, el número y el código postal.
+## INSTRUCTIONS:
+We must create an object that allows to instantiate buildings, for this we will create a constructor called Building to which we will pass as parameters the street, the number and the zip code.
 
-Se crearán los siguientes métodos asociados al constructor Edificio:
+The following methods associated with the Building constructor will be created:
 
-• agregarPlantasyPuertas(numplantas,puertas): Se le pasará el número de plantas que queremos crear en el piso y el número de puertas por planta. Cada vez que se llame a este método, añadirá el número de puertas y plantas indicadas en los parámetros, a las que ya están creadas previamente en el edificio.
+• agregarPlantasyPuertas(numplantas,puertas): It will be passed the number of floors we want to create on the floor and the number of doors per floor. Each time this method is called, it will add the number of doors and floors indicated in the parameters to those already created in the building..
 
-• modificarNumero(nuevoNumero): Se permitirá modificar el número del edificio, para ello se le pasará como parámetro el nuevo número.
+• modificarNumero(nuevoNumero): The number of the building can be modified by passing the new number as parameter.
 
-• modificarCalle(nuevaCalle): Se permitirá modificar la calla, para ello se le pasará el nombre de la nueva calle a modificar.
+• modificarCalle(nuevaCalle): It will be allowed to modify the street, for this the name of the new street to be modified will be passed to it.
 
-• modificarCodigoPostal(nuevoCP): Se permitirá la modificación del código postal, para ello se proporcionará como parámetro el nuevo código postal.
+• modificarCodigoPostal(nuevoCP): Modification of the postal code will be allowed, for this purpose the new postal code will be provided as a parameter.
 
-• mostrarCalle(): Método que devolverá el nombre de la calle donde está situado el edificio.
+• mostrarCalle(): Method that will return the name of the street where the building is located.
 
-• mostrarNumero(): Método que devolverá el número donde está situado el edificio.
+• mostrarNumero(): Method that will return the number where the building is located.
 
-• mostrarCodigoPostal(): Método que mostrará el código postal asociado a la población o ciudad donde está situado el edificio.
+• mostrarCodigoPostal(): Method that will display the zip code associated with the town or city where the building is located.
 
-• agregarPropietario(nombre,planta,puerta): Se permitirá añadir un nuevo propietario donde se le pasará el nombre del propietario, el número de planta y el número de puerta. Se le asignará dicho propietario al piso en cuestión.
+• agregarPropietario(nombre,planta,puerta): A new owner will be allowed to be added and the owner's name, floor number and door number will be passed to the owner. This owner will be assigned to the floor in question.
 
-• mostrarPlantas(): Método que permitirá mostrar todos los propietarios de cada puerta del edificio.
+• mostrarPlantas(): Method that will allow to show all the owners of each door of the building.
